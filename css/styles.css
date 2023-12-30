@@ -849,7 +849,7 @@ ol {
 /* Telefon */
 
 @media only screen and (max-width: 480px) {
-  .box-menu .box-address {
+  .box-menu {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -860,6 +860,11 @@ ol {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }
 
