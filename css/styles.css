@@ -849,55 +849,82 @@ ol {
 
 /* Telefon */
 
-@media only screen and (max-width: 480px) {
-}
+@media screen and (max-width: 480px) {
+  .box-menu,
+  .box-address,
+  .box-link-section-two svg,
+  .visually-hidden,
+  .box-icon-section-two,
+  .box-sestion-three {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .box-bg {
+    width: 428px;
+    height: 432px;
 
-.box-menu,
-.box-address,
-.box-link-section-two svg,
-.visually-hidden,
-.box-icon-section-two,
-.box-sestion-three {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.box-list-section-two {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 72px;
-}
-.box-heading-section-two {
-  margin: 0 auto;
-}
-.back {
-  width: 428px;
-  height: 432px;
-  flex-shrink: 0;
-}
+    padding: 112px 0;
+    margin: 0 auto;
+  }
 
-.box-h-one {
-  width: 320px;
-  font-family: Roboto;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-}
-.lo-go {
-  padding-top: 24px;
+  .lo-go {
+    padding-top: 24px;
+  }
+  .container {
+    width: 428px;
+  }
+  .list {
+    display: grid;
+    gap: 72px;
+  }
+  .box-h-one {
+    width: 320px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 72px;
+  }
+  .box-sestion-two {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .box-link-section-two {
+    display: inline-flex;
+    width: 396px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    text-align: justify;
+  }
+  .list-item-header {
+    display: flex;
+    width: 396px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .class-p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+  }
 }
 
 /* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 1200px) {
-}
+/* @media only screen and (min-width: 481px) and (max-width: 1200px) {
+} */
